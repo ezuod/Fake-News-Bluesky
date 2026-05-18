@@ -30,7 +30,7 @@ else:
 # ── Chemin du modèle ──────────────────────────────────────────────────────────
 # Chemin relatif qui fonctionne sur n'importe quel ordinateur
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(SCRIPT_DIR, "roberta_finetuned_v3")
+MODEL_PATH = os.path.join(SCRIPT_DIR, "roberta_finetuned_v4")
 MODEL_PATH = os.path.abspath(MODEL_PATH)
 
 # ── PostgreSQL ────────────────────────────────────────────────────────────────
