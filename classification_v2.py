@@ -141,7 +141,7 @@ def save_results(df, predictions, confidences, model, output_file="classificatio
     if hasattr(model.config, "id2label") and model.config.id2label:
         label_map = {int(k): v for k, v in model.config.id2label.items()}
     else:
-        label_map = {0: "Not Fake News", 1: "Fake News"}
+        label_map = {1: "Not Fake News", 0: "Fake News"}
 
     df["label"] = df["prediction"].map(lambda x: label_map.get(int(x), str(x)))
 
